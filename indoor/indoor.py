@@ -2,7 +2,7 @@
 name = input("What's your name? ")
 
 # Capitalize the first letter of each word
-name = name.title()
+name = name.lower()
 
 # Print the output
 print(f"hello, {name}")
