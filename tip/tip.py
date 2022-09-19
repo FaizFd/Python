@@ -6,11 +6,14 @@ def main():
 
 
 def dollars_to_float(d):
-    # TODO
+    no_dollar_sign = d.replace("$", "")
+    return no_dollar_sign
 
 
 def percent_to_float(p):
-    # TODO
+    no_percent_sign = p.replace("%", "")
+    p_to_float = float(no_percent_sign) / 100
+    return p_to_float
 
 
 main()
