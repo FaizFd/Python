@@ -1,5 +1,5 @@
-x = input("E: ")
+x = input("m: ")
 
 z = int(x) * int(90000000000000000)
 
-print("The sum =", z)
+print("E:", z)
