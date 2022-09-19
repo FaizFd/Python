@@ -2,7 +2,7 @@
 usrinput = input("Whats happening? ")
 
 # make the input lower case
-usrinput = usrinput.replace(" ", "...")
+usrinput = usrinput.lower()
 
 # Print the output
 print(f"{usrinput}")
