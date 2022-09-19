@@ -7,6 +7,7 @@ def main():
 
 def dollars_to_float(d):
     no_dollar_sign = d.replace("$", "")
+    
     return no_dollar_sign
 
 
