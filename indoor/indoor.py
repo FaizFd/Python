@@ -1,7 +1,7 @@
-# Ask the user for their name
+# Ask the user for their input
 usrinput = input("Whats happening? ")
 
-# Capitalize the first letter of each word
+# make the input lower case
 usrinput = usrinput.lower()
 
 # Print the output
