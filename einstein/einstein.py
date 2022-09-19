@@ -1,6 +1,5 @@
-x = input("What's x? ")
-y = input("What's y? ")
+x = input("E: ")
 
-z = int(x) + int(y)
+z = int(x) * int(90000000000000000)
 
 print("The sum =", z)
