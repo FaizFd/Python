@@ -1,5 +1,8 @@
 # Ask the user for their name
 name = input("What's your name? ")
 
-# Print hello and the inputted name
-print("hello,", name)
+# Capitalize the first letter of each word
+name = name.title()
+
+# Print the output
+print(f"hello, {name}")
