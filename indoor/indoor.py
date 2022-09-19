@@ -1,8 +1,8 @@
 # Ask the user for their name
-name = input("What's your name? ")
+usrinput = input("Whats happening? ")
 
 # Capitalize the first letter of each word
-name = name.lower()
+usrinput = usrinput.lower()
 
 # Print the output
-print(f"hello, {name}")
+print(f"{usrinput}")
