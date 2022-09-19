@@ -5,7 +5,7 @@ def main():
     print(f"Leave ${tip:.2f}")
 
 
-def dollars_to_float(d):
+def dollars_to_float(dollars):
     dollars = dollars.replace("$","")
     dollars = float(dollars)
     return dollars
