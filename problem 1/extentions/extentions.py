@@ -1,5 +1,7 @@
 name = input("File name: ")
 
-match name:
+new_name = x.lower().strip()
+
+match new_name:
       case "Harry" | "Hermione" | "Ron":
           print("Gryffindor")
