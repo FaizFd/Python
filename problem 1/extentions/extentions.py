@@ -13,4 +13,8 @@ elif ".png" in new_name:
 elif ".pdf" in new_name:
     print("application/pdf")
 elif ".txt" in new_name:
-    print("")
+    print("text/plain")
+elif ".zip" in new_name:
+    print("application/zip")
+else:
+    print("404 not found")
