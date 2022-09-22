@@ -1,7 +1,6 @@
 name = input("File name: ")
 
-new_name = x.lower().strip()
+new_name = name.lower().strip()
 
-match new_name:
-      case "".endswith(".jpg"):
-          print("image/jpg")
+if ".gif" in new_name:
+    print("image/gif")
