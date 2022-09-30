@@ -1,7 +1,7 @@
 def main():
     answer = input("What time is it? ")
     time = convert(answer)
-    if time >= 7 & <= 8:
+    if time >= 7 and time <= 8:
         print("Time for Lunch")
 
 
