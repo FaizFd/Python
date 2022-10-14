@@ -1,10 +1,11 @@
-amount_due = 50
+price_owed = 50
 
-while amount_due > 0:
-    print("Amount Due: 50", amount_due)
-    coin = int(input("Insert Coin: "))
+while True:
+
+    print("Amount Due: ", price_owed)
+    coin = int(input("Insert coin: " ))
     if coin in [25, 10, 5]:
-        amount_due -= coin
-
-change_owed = amount_due
-print("Change Owed: ", change_owed)
+        price_owed -= coin
+    if price_owed <= 0:
+        print("Change Owed:",abs(price_owed))
+        break
