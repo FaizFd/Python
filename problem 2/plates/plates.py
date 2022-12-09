@@ -18,6 +18,11 @@ def is_valid(s):
         if s[i].isalpha == False:
             if s[i] == '0':
                 return False
+            else:
+                break
+
+        i += 1
+    
 
 
 main()
