@@ -22,7 +22,9 @@ def is_valid(s):
                 break
 
         i += 1
-    
+    if c in s:
+        if c in ['.', ' ', '!', '?']:
+            return False
 
 
 main()
