@@ -7,28 +7,26 @@ def main():
 
 def is_valid(s):
 
-# Checks if only valid characters and length is in the plate
     if s.isalnum() == False or len(s) < 2 or len(s) > 6:
         return False
 
-# Checks if the first two are letters
+
     for i in range(2):
-        if s[i].isalpha() == False: # if it is not letters, return false
+        if s[i].isalpha() == False:
             return False
 
-# Checks if the first number is a zero or not (it should not be)
-    temp = ""
+    frst = ""
     for i in range(0, len(s)):
         if s[i].isalpha() == False:
-            temp += s[i]
-            if temp[0] == "0":
+            frst += s[i]
+            if frst[0] == "0":
                 return False
 
-# Edge case: if the whole string is purely letters
+
     if s.isalpha():
         return True
 
-# Checks if numbers are used in the middle of the plate or not (it should not be)
+
     for i in range(0, len(s)):
         if s[i].isalpha() == False:
             recorder = i
