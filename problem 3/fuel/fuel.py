@@ -1,7 +1,8 @@
 while True:
 
+    fuel = input("Fraction: ")
     try:
-        input (print("Fraction: "))
+
 except ValueError:
     ...
 except ZeroDivisionError:
