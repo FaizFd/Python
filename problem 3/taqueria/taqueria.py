@@ -14,7 +14,7 @@ total_amount = 0
 
 while True:
     try:
-        item = input("Item: ").tittle()
+        item = input("Item: ").title()
 
         if item in menu:
             total_amount =+ menu[item]
