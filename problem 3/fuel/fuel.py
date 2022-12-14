@@ -1,0 +1,6 @@
+try:
+    input (print("Fraction: "))
+except ValueError:
+    ...
+except ZeroDivisionError:
+    ...
