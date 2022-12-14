@@ -17,7 +17,7 @@ while True:
         item = input("Item: ").title()
 
         if item in menu:
-            total_amount =+ menu[item]
+            total_amount += menu[item]
 
             print("Total: $", end="")
             print("{:.2f}".format(total_amount))
