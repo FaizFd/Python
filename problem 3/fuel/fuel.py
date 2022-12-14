@@ -23,4 +23,5 @@ if p <= 1:
 elif p >= 99:
     print("F")
 
-else print(f"{p}%")
+else:
+    print(f"{p}%")
