@@ -12,8 +12,8 @@ while True:
         if f <= 1:
             break
 
-except (ValueError, ZeroDivisionError):
-    pass
+    except (ValueError, ZeroDivisionError):
+        pass
 
 p = int(f * 100)
 
