@@ -3,7 +3,7 @@ grocery = {}
 while True:
 
     try:
-        item = input()
+        item = input().lower()
 
         if item in grocery:
             grocery [item] += 1
@@ -13,7 +13,7 @@ while True:
 
      except EOFError:
 
-        for key in grocery:
-            print(key)
+        for key in sorted(grocery.keys()):
+            print(grocery[key], key.upper())
 
         break
