@@ -6,10 +6,10 @@ while True:
         item = input().lower()
 
         if item in grocery:
-            grocery [item] += 1
+            grocery[item] += 1
 
         else:
-            grocey [item] = 1
+            grocey[item] = 1
 
      except EOFError:
 
