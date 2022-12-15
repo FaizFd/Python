@@ -11,7 +11,7 @@ while True:
         else:
             grocey[item] = 1
 
-     except EOFError:
+    except EOFError:
 
         for key in sorted(grocery.keys()):
             print(grocery[key], key.upper())
