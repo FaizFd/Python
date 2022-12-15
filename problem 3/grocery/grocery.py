@@ -9,7 +9,7 @@ while True:
             grocery[item] += 1
 
         else:
-            grocey[item] = 1
+            grocery[item] = 1
 
     except EOFError:
 
