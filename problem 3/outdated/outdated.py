@@ -12,30 +12,31 @@ months = [
     "November",
     "December"
 ]
-
-while true:
-    date = input("Date: ")
-    try:
-
-        month, day, year = date.split("/")
-
-        if (int(month) >= 1 and int(month) <= 12) and (int(day) >=1 and int(day) <= 31):
-            break
-    except:
+def main():
+    while True:
+        date = input('Date: ')
         try:
-            old_month, old_day, year = date.split(" ")
-
-            for i in range (len(months)):
-                if old_month == months[i]:
-                    month = i + 1
-
-            day = old_day.replace(",","")
-            if (int(month) >= 1 and int(month) <= 12) and (int(day) >=1 and int(day) <= 31):
-                break
-
+            mnth,day,year = date.split('/')
+            mnth = int(mnth)
+            day = int(day)
+            year = int(year)
+            if (int (mnth) > 0 and int(mnth) < 13) and (int(day) > 0 and int(day) < 32):
+                if year >= 1000 and year <= 9999:
+                    print (year, f'{mnth:02}',f'{day:02}', sep='-')
+                    break
         except:
+            try:
+                if "," in date:
+                    mnth,day,year = date.split(' ')
+                    day = day.replace(',','')
+                    day = int(day)
+                    year = int(year)
+                    if mnth in months and (int(day) > 0 and int(day) < 32):
+                        if year >= 1000 and year <= 9999:
+                            mnth= (months.index (mnth)+1)
+                            print (year, f'{mnth:02}',f'{day:02}', sep = '-')
+                            break
+            except:
+                pass
 
-            print()
-            pass
-
-print(f"{year}-{int(month):02}-{int(day):02}")
+main()
