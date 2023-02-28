@@ -23,4 +23,5 @@ while true:
             old_month, old_day, year = date.split(" ")
 
             for i in range (len(months)):
-                if old_month == true
+                if old_month == months[i]:
+                    month = i + 1
