@@ -32,4 +32,7 @@ while true:
 
         except:
 
-            
+            print()
+            pass
+
+print(f"{year}-{month}-{day}")
