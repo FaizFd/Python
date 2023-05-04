@@ -10,8 +10,6 @@ elif len(sys.argv) == 3 and (sys.argv[1] == "-f" or sys.argv[1] == "--font"):
 else:
     sys.exit(1)
 
-msg = input("Input: ")
-
 figlet.getFonts()
 
 if isRandomFont == False:
@@ -21,3 +19,6 @@ if isRandomFont == False:
     except:
         print("Invalid Responce")
         sys.exit(1)
+
+
+msg = input("Input: ")
