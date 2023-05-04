@@ -11,3 +11,5 @@ else:
     sys.exit(1)
 
 msg = input("Input: ")
+
+figlet.getFonts()
