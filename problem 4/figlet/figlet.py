@@ -10,8 +10,8 @@ if len(sys.argv) == 3:
     if (sys.argv[1] == '-f' or sys.argv[1] == '--font'):
         for font in figlet.getFonts():
             figlet.setFont(font=sys.argv[2])
-            prompt = input('Input: ')
-            print('Output:\n', figlet.renderText(prompt))
+            response = input('Input: ')
+            print('Output:\n', figlet.renderText(response))
             break
     else:
         sys.exit('Invalid usage')
