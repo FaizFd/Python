@@ -13,3 +13,11 @@ else:
 msg = input("Input: ")
 
 figlet.getFonts()
+
+if isRandomFont == False:
+    try:
+        figlet.setFont(font=sys.argv[2])
+        print(figlet.renderText(msg))
+    except:
+        print("Invalid Responce")
+        sys.exit(1)
