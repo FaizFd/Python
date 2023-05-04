@@ -7,4 +7,4 @@ elif len(sys.argv) == 3 and (sys.argv[1] == "-f" or sys.argv[1] == "--font"):
 else:
     sys.exit(1)
 
-print(isRandomFont)
+msg = input("Input: ")
