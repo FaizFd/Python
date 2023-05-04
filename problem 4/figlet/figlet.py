@@ -1,4 +1,7 @@
 import sys
+form pyfiglet import Figlet
+
+figlet = Figlet()
 
 if len(sys.argv) == 1:
     isRandomFont = True
