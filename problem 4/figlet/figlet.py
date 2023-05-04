@@ -21,5 +21,10 @@ if isRandomFont == False:
         print("Invalid usage")
         sys.exit(1)
 
+else:
+    font = random.choice(figlet.getFonts())
 
 msg = input("Input: ")
+
+print("Output: ")
+print(figlet.renderText(msg))
