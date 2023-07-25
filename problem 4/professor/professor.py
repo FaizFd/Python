@@ -63,4 +63,3 @@ def simulate_game(level):
     return score
 
 if __name__ == "__main__":
-    main()
